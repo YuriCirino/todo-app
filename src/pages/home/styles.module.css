@@ -1,0 +1,40 @@
+.container{
+    color:var(--light-gray);
+    height: 100vh;
+    background-color: var(--dark-blue);
+}
+.header{
+    background-size: cover;
+    height: 40vh;
+    background-color: var(--dark-blue);
+    background-image: url('../../assets/bg-desktop-dark.jpg');
+}
+.header_dark{
+    composes: header;    
+    background-color: var(--dark-blue);
+    background-image: url('../../assets/bg-desktop-dark.jpg');
+}
+.header_light{
+    composes: header;
+    background-color: var(--light-gray);
+    background-image: url('../../assets/bg-desktop-light.jpg');
+}
+.content{
+    background-color: var(--light-gray);
+    height: 60vh;
+    max-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+.content_light{
+    composes: content;
+    background-color: var(--light-gray);
+ 
+}
+.content_dark{
+    composes: content;
+    background-color: var(--dark-blue);
+
+}
